@@ -1,0 +1,50 @@
+
+
+.App {
+  background-color: lightblue;
+  
+  font-family: Stencil Std fantasy;
+}
+
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-label{
+  font-size: 20pt;
+}
+
+.App-h1{
+  font-size: 40pt;
+  font-family: Impact;
+  padding-bottom: 20px;
+}
+
+.App-title {
+  font-size: 60pt;
+  font-family: Impact;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-columnL{
+  float: left;
+  width: 50%;
+  padding-left: 125px;
+  padding-right: 70px;
+}
+
+.App-columnR{
+  float: right;
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
