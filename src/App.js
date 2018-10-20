@@ -49,28 +49,28 @@ class App extends Component {
 
   changeHelm(newArmor){
     const armor = this.state.armors.find(armor => armor.id == newArmor)
-    this.setState({ 
+    this.setState({
       helm: armor
     });
   }
 
   changeChest(newArmor){
     const armor = this.state.armors.find(armor => armor.id == newArmor)
-    this.setState({ 
+    this.setState({
       chest: armor
     });
   }
 
   changeArms(newArmor){
     const armor = this.state.armors.find(armor => armor.id == newArmor)
-    this.setState({ 
+    this.setState({
       armsPiece: armor
     });
   }
 
   changeLegs(newArmor){
     const armor = this.state.armors.find(armor => armor.id == newArmor)
-    this.setState({ 
+    this.setState({
       legsPiece: armor
     });
   }
@@ -187,23 +187,23 @@ class App extends Component {
     var s = "";
     if(this.state.weapon)
     {
-      s+= this.state.weapon.perk.name + "\n" ;
+      s+= this.state.weapon.perk.name + ", " ;
     }
     if(this.state.helm)
     {
-      s += "\n" + this.state.helm.perk.name;
+      s += this.state.helm.perk.name + ", ";
     }
     if(this.state.chest)
     {
-      s+= "\n" + this.state.chest.perk.name;
+      s+= this.state.chest.perk.name + ", ";
     }
     if(this.state.armsPiece)
     {
-      s+= "\n" + this.state.armsPiece.perk.name;
+      s+= this.state.armsPiece.perk.name + ", ";
     }
     if(this.state.legsPiece)
     {
-      s+= "\n" + this.state.legsPiece.perk.name;
+      s+= this.state.legsPiece.perk.name + ", ";
     }
     return s;
   }
