@@ -205,6 +205,10 @@ class App extends Component {
     {
       s+= this.state.legsPiece.perk.name + ", ";
     }
+    if (s.length > 0)
+    {
+      return s.substring(0, s.length-2);
+    }
     return s;
   }
 
